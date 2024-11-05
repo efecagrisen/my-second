@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-6">
+        <h2>This is a header</h2>
+        <h2>{{title|uppercase}}</h2>
+        <h2>Age: {{age | currency}}</h2>
+        <br>
+        <button  class="btn btn-primary"
+                (click)="onClick()"
+                (click)="onClickEvent($event)"
+                (mouseover)="onHover()"
+                [disabled]="isDisabled">Click Me!</button>
+    </div>
+    <div class="col-6">
+        <div class="input-group mb-3">
+            <input #reference type="text" class="form-control">
+            <button class="btn btn-secondary"
+                    (click)="onSubmit(reference.value)">Submit</button>
+        </div>
+        <h2>{{sentence}}</h2>
+        <br>
+        <input type="text" class="form-control" [(ngModel)]="anyString" name="anyString">
+        <h2>{{ anyString }}</h2>
+       
+    </div>
+</div>
