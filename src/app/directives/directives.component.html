@@ -7,11 +7,22 @@
     <div class="col-6">
         <h2 [ngStyle]="{'outline-style': isDisabled ? 'double' : 'dashed'}">Ng-Style Example</h2>
     </div>
-    <div class="col-12" *ngIf = "isAuthorized">
+    <div class="col-4">
         <h1>Ng If</h1>
-        <ul class="list-group">
-            <h2>Mentors</h2>
+        <ul class="list-group" *ngIf = "mentors">
             <li class="list-group-item" *ngFor="let mentor of mentors" >{{mentor}}</li>
+        </ul>
+    </div>
+    <div class="col-4">
+        <h1>Ng For with class</h1>
+        <ul class="list-group" *ngIf = "myMentors">
+            <li class="list-group-item" *ngFor="let myMentor of myMentors" >{{myMentor.name}}</li>
+        </ul>
+    </div>
+    <div class="col-4">
+        <h1>Ng For with interface</h1>
+        <ul class="list-group" *ngIf = "iMentors">
+            <li class="list-group-item" *ngFor="let iMentor of iMentors" >{{iMentor.name}}</li>
         </ul>
     </div>
 </div>
