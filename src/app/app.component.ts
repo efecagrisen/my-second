@@ -6,12 +6,13 @@ import { InvoiceComponent } from "./invoice/invoice.component";
 import { BindingComponent } from "./binding/binding.component";
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { DirectivesComponent } from "./directives/directives.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, CategoryComponent, 
-    InvoiceComponent, BindingComponent, CommonModule,FormsModule],
+  imports: [RouterOutlet, NavbarComponent, CategoryComponent,
+    InvoiceComponent, BindingComponent, CommonModule, FormsModule, DirectivesComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
