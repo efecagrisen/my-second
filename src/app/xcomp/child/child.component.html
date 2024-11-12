@@ -1,0 +1,6 @@
+<div *ngIf="selectedC">
+    <p>{{selectedC.name}}</p>
+    <div class="btn btn-primary" (click)="onLike()">
+        Like Me: {{selectedC.likeCount}}
+    </div>
+</div>
