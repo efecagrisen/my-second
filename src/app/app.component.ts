@@ -11,6 +11,8 @@ import { RoutingComponent } from "./routing/routing.component";
 import { DetailsComponent } from './routing/details/details.component';
 import { ParentComponent } from './xcomp/parent/parent.component';
 import { ServiceDemoComponent } from './service-demo/service-demo.component';
+import { LeftComponent } from './intercomm/left/left.component';
+import { RightComponent } from './intercomm/right/right.component';
 
 const routes: Routes = [
   {path:'bindings', component: BindingComponent},
@@ -19,6 +21,8 @@ const routes: Routes = [
   {path:'mentor/:id', component: DetailsComponent},
   {path:'xcomp', component: ParentComponent},
   {path:'servicedemo', component: ServiceDemoComponent},
+  {path:'left', component: LeftComponent},
+  {path:'right', component: RightComponent}
 ]
 
 @Component({

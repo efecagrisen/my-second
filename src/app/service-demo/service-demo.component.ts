@@ -18,6 +18,7 @@ export class ServiceDemoComponent implements OnInit{
 
   ngOnInit(): void {
     this.mentors = this.service.mentors;
+    console.log("mentors fetched")
   }
 
   
