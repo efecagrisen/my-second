@@ -14,18 +14,15 @@ import { Router } from '@angular/router';
 export class LeftComponent implements OnInit{
 
   mentors: Mentor[] = [];
-mentor: any;
-
-  constructor(private service: MentorService, private router: Router){
-    
-  }
+  
+  constructor(private service: MentorService, private router: Router){}
 
   ngOnInit(): void {
     this.mentors = this.service.mentors;
   }
 
   onSelectMentor(mentor: Mentor){
-   console.log(mentor);
+   this.service.selectedMentor = mentor;
    this.router.navigate(['right']);
 
   }
