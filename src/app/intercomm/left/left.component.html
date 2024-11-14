@@ -8,7 +8,7 @@
                 *ngFor="let mentor of mentors" 
                 (click)="onSelectMentor(mentor)">
                 <div class="ms-2 me-auto">
-                    <div class="fw-bold">{{mentor.name}}</div>
+                    <div class="fw-bold">{{mentor.firstName}}</div>
                 </div>
                 <span class="badge bg-primary rounded-pill">{{mentor.likeCount}}</span>
                 </a>

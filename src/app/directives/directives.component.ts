@@ -16,10 +16,10 @@ export class DirectivesComponent {
   mentors: string[]=['Sezai','Ensar','Ümran','Efe']
   
   myMentors: Mentor[] = [
-    new Mentor(1,'Efe', 12),
-    new Mentor(2,'Sezai'),
-    new Mentor(3,'Matt',26),
-    new Mentor(4,'George'),
+    new Mentor(1,'Efe', 'Sen', 'abc@abc.com', 12),
+    new Mentor(2,'Sezai','Sen', 'abc@abc.com',),
+    new Mentor(3,'Matt','Sen', 'abc@abc.com',26),
+    new Mentor(4,'George','Sen', 'abc@abc.com',),
   ]
 
   iMentors: IMentor[] = [

@@ -14,9 +14,10 @@ import { RouterModule } from '@angular/router';
 export class RoutingComponent {
 
   mentors: Mentor[] = [
-    new Mentor(1,"MentorEfe",65),
-    new Mentor(2,"MentorSezai",85),
-    new Mentor(3,"MentorEnsar",25)
+    new Mentor(1,'Efe', 'Sen', 'abc@abc.com', 12),
+    new Mentor(2,'Sezai','Sen', 'abc@abc.com',),
+    new Mentor(3,'Matt','Sen', 'abc@abc.com',26),
+    new Mentor(4,'George','Sen', 'abc@abc.com',),
   ]
 
 }

@@ -11,7 +11,10 @@ import { CommonModule, NgFor } from '@angular/common';
   styleUrl: './parent.component.css'
 })
 export class ParentComponent {
-  mentors: Mentor[] = [new Mentor(1,"Efe",65), new Mentor(2,"Sezai",85), new Mentor(3,"Ensar",25)]
+  mentors: Mentor[] = [new Mentor(1,'Efe', 'Sen', 'abc@abc.com', 12),
+    new Mentor(2,'Sezai','Sen', 'abc@abc.com',),
+    new Mentor(3,'Matt','Sen', 'abc@abc.com',26),
+    new Mentor(4,'George','Sen', 'abc@abc.com',),]
 
   selectedP: Mentor | undefined;
 
