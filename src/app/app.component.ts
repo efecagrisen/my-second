@@ -13,6 +13,7 @@ import { ParentComponent } from './xcomp/parent/parent.component';
 import { ServiceDemoComponent } from './service-demo/service-demo.component';
 import { LeftComponent } from './intercomm/left/left.component';
 import { RightComponent } from './intercomm/right/right.component';
+import { PostComponent } from './post/post.component';
 
 const routes: Routes = [
   {path:'bindings', component: BindingComponent},
@@ -22,14 +23,15 @@ const routes: Routes = [
   {path:'xcomp', component: ParentComponent},
   {path:'servicedemo', component: ServiceDemoComponent},
   {path:'left', component: LeftComponent},
-  {path:'right', component: RightComponent}
+  {path:'right', component: RightComponent},
+  {path:'posts', component: PostComponent}
 ]
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, NavbarComponent, CategoryComponent,
-    InvoiceComponent, BindingComponent, CommonModule, FormsModule, DirectivesComponent, RoutingComponent,RouterModule,DetailsComponent],
+    InvoiceComponent, BindingComponent, CommonModule, FormsModule, DirectivesComponent, RoutingComponent,RouterModule,DetailsComponent, PostComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
