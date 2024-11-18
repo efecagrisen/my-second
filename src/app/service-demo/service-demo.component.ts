@@ -18,14 +18,14 @@ export class ServiceDemoComponent implements OnInit{
   constructor(private service: MentorService){}
 
   ngOnInit(): void {
-    // this.mentors = this.service.mentors;
-    this.service.fetchMentors$().subscribe({
-        next: (data) => {
-          this.mentors = data;
-          console.log('Mentors:', this.mentors)},
-        error: (error) => console.log(error),
-        complete: () => console.log("completed")
-    }
+    this.mentors = this.service.mentors;
+    // this.service.fetchMentors$().subscribe({
+    //     next: (data) => {
+    //       this.mentors = data;
+    //       console.log('Mentors:', this.mentors)},
+    //     error: (error) => console.log(error),
+    //     complete: () => console.log("completed")
+    // }
 
     );
     console.log("mentors fetched")
